@@ -15,7 +15,7 @@ The components of our installation
 
 ### Dockerfile
 
-To set it up we can create a simple docker file:
+To set it up we can create a docker file:
 
 ```Dockerfile
 FROM nixos/nix
@@ -50,6 +50,8 @@ ENV LANG=en_GB.UTF-8
 ENV PATH=/home/me/.nix-profile/bin:$PATH
 
 ```
+
+The details here are not so important but this basically sets up the correct environment for dapp tools to function within docker. 
 
 This defines our dapptools environment and allows us to run dapptools within Docker. That means we can have a portable installation all you need is docker as opposed to an the esoteric nix installation.
 
